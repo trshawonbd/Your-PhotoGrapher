@@ -1,0 +1,37 @@
+[
+    {
+      "id": "1",
+      "name": "Wedding Photograpgy",
+      "balance": "$1,714",
+      "picture": "http://placehold.it/32x32",
+      "about": "A wedding is an important event in life. The pictures taken on this day will remain a memory for a lifetime and their value will increase every day. These are the pictures you look at after ten, twenty or even fifty anniversaries and think: it was still a great day! The pictures you show your children, your grandchildren, to tell them the story of finding your soul mate!\r\n"
+    },
+    {
+      "id": "2",
+      "name": "New Born Baby Photograpgy",
+      "balance": "$1,000",
+      "picture": "http://placehold.it/32x32",
+      "about": "It doesn't matter if you are expecting a baby, a new mother or have already created a larger litter. As a mother, you are the most important thing to me. The brilliance of motherhood and its emotional scope is something that is hard to miss. This huge thing is already in your eyes when you come to capture your changed body. It is something that is so caring and loving. I feel the greatest joy when I get a picture of this wonderful feeling of yours - something bright and wonderful.\r\n"
+    },
+    {
+      "id": "3",
+      "name": "Engagement PhotoGraphy",
+      "balance": "$1,546",
+      "picture": "http://placehold.it/32x32",
+      "about": "One of the most important days of life Enagagement should be unforgettable and relaxed, full of freshness and charm and unforgettable emotions. In order for the bride and groom to feel as comfortable and relaxed as possible during their day, I would like to meet and get to know each other in advance. Let's talk about everything related to photography on the wedding day. I will share my recommendations at the meeting and give advice based on my past experience. \r\n"
+    },
+    {
+      "id": "4",
+      "name": "Hould Night Photography",
+      "balance": "$1,231",
+      "picture": "http://placehold.it/32x32",
+      "about": "The bride is seated on a dais and the turmeric paste is applied by the guests to her face and body. Turmeric is known to cleanse, soften and brighten the skin, giving the bride's skin the distinctive yellow hue that gives its name to this ceremony. The sweets are then fed to the bride by all the guests and attendants, piece by piece.In Muslim Bengali families the henna is used to decorate her hands and feet with elaborate abstract designs. \r\n"
+    },
+    {
+        "id": "5",
+        "name": "Maternity Photography",
+        "balance": "$1,031",
+        "picture": "http://placehold.it/32x32",
+        "about": "There is no more moving moment than becoming a mother. I can see your happiness and brilliance in your eyes when you are a new mother, even if you have a difficult childbirth or a large family that has robbed you all your time. With my pictures I want to make you realize how wonderful you are as a mother and how beautifully you care about your family. I see how much mothers are currently subject to great external pressure, expectations and responsibilities. With my pictures, I want to say that you are enough.\r\n"
+      }
+  ]
