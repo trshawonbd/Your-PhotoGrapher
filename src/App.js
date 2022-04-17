@@ -6,6 +6,7 @@ import Header from './components/Shared/Header/Header';
 import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog'
 import Login from './components/Login/Login';
+import Register from './components/Register/Register'; 
 import About from './components/AboutMe/AboutMe';
 import NotFound from './components/Shared/NotFound/NotFound';
 import CheckOut from './components/CheckOut/CheckOut';
@@ -33,6 +34,7 @@ function App() {
       <Route path='/services' element={<Services></Services>}></Route>
       <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/login' element = {<Login></Login>}></Route>
+      <Route path='/register' element = {<Register></Register>}></Route>
       <Route path='/about' element = {<About></About>}></Route>
       <Route path='/service/:id' element = {<CheckOut></CheckOut>}></Route>
       <Route path='*' element = {<NotFound></NotFound>}></Route>
