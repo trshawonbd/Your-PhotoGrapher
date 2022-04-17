@@ -1,0 +1,44 @@
+.card-img img{
+    height: 200px;
+}
+
+.card-service{
+    background-color: black;
+    border: 2px solid rgba(220, 202, 135, 1);
+    position: relative;
+}
+
+.service-name{
+    color: crimson;
+}
+
+.text{
+    text-align: justify;
+}
+
+ .btn-read-more{
+    margin-left: 10px;
+    padding: 1px;
+    font-size: 12px;
+    background-color: rgba(220, 202, 135, 1) ;
+    color: black;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: none;
+} 
+
+
+
+.btn-read-more:hover{
+    background-color: rgba(220, 202, 135, 1) ;
+    color: black;
+}
+
+ .book-now-btn {
+    border: 2px solid rgba(220, 202, 135, 1);
+    background-color: rgba(220, 202, 135, 1);
+    font-weight: 700;
+    border-radius: 5px;
+}
