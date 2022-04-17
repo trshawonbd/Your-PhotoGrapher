@@ -8,7 +8,7 @@ const NotFound = () => {
        
     
         
-        <div className='not-found w-100 '>
+        <div className='not-found w-100'>
             
             <img src={gif} alt="" srcset="" />      
         </div>

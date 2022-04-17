@@ -4,8 +4,15 @@ import './Header.css';
 import logo from '../../../images/logo.png'
 import { Link, NavLink } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+import auth from '../../../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const handleSignOut = () =>{
+        signOut(auth);
+    }
     return (
         
         <Navbar bg="dark" variant="dark">
@@ -38,13 +45,15 @@ const Header = () => {
                         >
                             About
                         </NavLink>
-                        {/* user ? <p className='signout-btn' onClick={handleSignOut}>SignOut</p> : */}
+                        { user ? <p className='signout-btn' onClick={handleSignOut}>SignOut</p> : 
                         <NavLink
                             className={({ isActive }) => (isActive ? "active-link" : "link")}
                             to='/login'
                         >
                             Login
                         </NavLink>
+
+    }
                     </Nav>
                 </Container>
             </Navbar>

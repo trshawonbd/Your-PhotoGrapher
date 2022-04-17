@@ -36,8 +36,6 @@ function App() {
       <RequireAuth>
       <Services></Services>
       </RequireAuth>
-
-      
       }></Route>
       <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/login' element = {<Login></Login>}></Route>
@@ -47,8 +45,7 @@ function App() {
       <RequireAuth>
           <CheckOut></CheckOut>
       </RequireAuth>
-      }
-      
+      }     
       ></Route>
       <Route path='*' element = {<NotFound></NotFound>}></Route>
       </Routes>
