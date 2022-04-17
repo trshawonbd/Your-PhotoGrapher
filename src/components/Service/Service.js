@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './Service.css';
 
-const Service = ({ service }) => {
+const Service = ({ service, addToCart }) => {
 
     const [showMore, setShowMore] = useState(false);
     const {name, price, picture, about} = service;
@@ -22,7 +22,7 @@ const Service = ({ service }) => {
                     <hr />
                     <h4 className='card-price'>Price:{price}</h4>
                     <hr />
-                    <button    /* onClick={() => addToCart(service)} */ className='book-now-btn ms-3'>Book Now</button>
+                    <button     onClick={() => addToCart(service)} className='book-now-btn ms-3'>Book Now</button>
                 </div>
             </div>
         </div>

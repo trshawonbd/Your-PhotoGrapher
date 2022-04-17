@@ -7,10 +7,25 @@ import Services from './components/Services/Services';
 import Blog from './components/Blog/Blog'
 import Login from './components/Login/Login';
 import About from './components/AboutMe/AboutMe';
+import NotFound from './components/Shared/NotFound/NotFound';
+import CheckOut from './components/CheckOut/CheckOut';
+import { createContext, useEffect, useState } from 'react';
+export const ServiceContext = createContext();
 
 function App() {
+  const [services, setServices] = useState([]);
+  useEffect(() => {
+    fetch('services.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+}
+    , [])
+
+    const value = [services, setServices] ;
+
   return (
     <div className="App">
+      <ServiceContext.Provider value={value}>
       <Header></Header>
       <Routes>
       <Route path='/' element={<Home></Home>}></Route>
@@ -19,9 +34,11 @@ function App() {
       <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/login' element = {<Login></Login>}></Route>
       <Route path='/about' element = {<About></About>}></Route>
+      <Route path='/service/:id' element = {<CheckOut></CheckOut>}></Route>
+      <Route path='*' element = {<NotFound></NotFound>}></Route>
       </Routes>
 
-
+      </ServiceContext.Provider>
     </div>
   );
 }

@@ -1,16 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ServiceContext } from '../../App';
 import Service from '../Service/Service';
 import './Services.css';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
+    const [services] = useContext(ServiceContext);
+    const [cart, setCart] = useState([]);
+    const navigate = useNavigate();
 
-    useEffect(() => {
+ /*    useEffect(() => {
         fetch('services.json')
             .then(res => res.json())
             .then(data => setServices(data))
     }
-        , [])
+        , []) */
+
+    const addToCart = (service) => {
+        const exist = cart.find(s => s.id === service.id)
+        if (exist) {
+            setCart(cart.map(s => s.id === service.id ? { ...exist, qty: exist.qty + 1 } : s))
+            ;
+        }
+        else{
+            setCart([...cart, { ...service, qty: 1 }])
+        }
+            
+            navigate(`/service/${service.id}`);
+
+    }
+
+
+
 
     return (
         <div className='container '>
@@ -21,7 +42,8 @@ const Services = () => {
                     services.map((service) => <Service
                         key={service.id}
                         service={service}
-
+                        addToCart = {addToCart}
+                        
                     ></Service>)
                 }
 
