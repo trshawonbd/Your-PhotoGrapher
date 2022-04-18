@@ -24,6 +24,7 @@ Open [https://majestic-strudel-bd8af5.netlify.app/](https://majestic-strudel-bd8
 * React Bootstrap is used for making the website responsive.
 * React Dom Router is used for navigate like a SPA.
 * React Tostify is used to show the toast.
+* React FontAwesome is used to show the font.
 * React Firebase is used for authentication.
 * React Firebase hooks are used to implement Google and user and email authentication.
 * Firebase hosting is used to deploy the website
