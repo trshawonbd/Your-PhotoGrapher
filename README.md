@@ -4,7 +4,7 @@
 
 
 Live Link:\
-Open [https://majestic-strudel-bd8af5.netlify.app/](https://majestic-strudel-bd8af5.netlify.app/) to view it in your browser.
+Open [https://your-photographer.web.app/](https://your-photographer.web.app/) to view it in your browser.
 
 ## Website Description:
 
