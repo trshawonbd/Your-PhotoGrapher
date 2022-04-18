@@ -13,9 +13,9 @@ const Register = () => {
         createUserWithEmailAndPassword,
         user,
         loading,
-        error,
+        
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 
@@ -36,11 +36,9 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        console.log('Updated profile');
         navigate('/home');
     }
 
@@ -54,7 +52,6 @@ const Register = () => {
 
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                {/* <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept  Terms and Conditions</label> */}
                 <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Your PhotoGrapher Terms and Conditions</label>
                 <input
                     disabled={!agree}
@@ -62,7 +59,7 @@ const Register = () => {
                     type="submit"
                     value="Register" />
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+            <p>Already have an account? <Link to="/login" className='text pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
             <SocialLogin></SocialLogin>
         </div>
     );

@@ -12,16 +12,20 @@ import NotFound from './components/Shared/NotFound/NotFound';
 import CheckOut from './components/CheckOut/CheckOut';
 import { createContext, useEffect, useState } from 'react';
 import RequireAuth from './components/Shared/RequireAuth/RequireAuth';
+import Loading from './components/Shared/Loading/Loading';
 export const ServiceContext = createContext();
 
 function App() {
   const [services, setServices] = useState([]);
+  
   useEffect(() => {
     fetch('services.json')
         .then(res => res.json())
-        .then(data => setServices(data))
+        .then(data => setServices(data)
+  )
 }
     , [])
+
 
     const value = [services, setServices] ;
 

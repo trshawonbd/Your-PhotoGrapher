@@ -3,10 +3,6 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-/* import auth from '../../../firebase.init';
-import Loading from '../../Shared/Loading/Loading';
-import SocialLogin from '../SocialLogin/SocialLogin';
-import { ToastContainer, toast } from 'react-toastify'; */
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
@@ -14,10 +10,6 @@ import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const Login = () => {
      const emailRef = useRef('');
-     /*
-    const passwordRef = useRef('');
-    
-     */
     const navigate = useNavigate();
     const location = useLocation();
 
