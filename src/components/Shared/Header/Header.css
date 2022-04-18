@@ -8,7 +8,7 @@
     color: crimson;
 }
 
-Nav .nav-link {
+/* Nav .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ Nav .nav-link {
   font-family: Sans;
   width: 64px;
   height: 28px;
-}
+} */
 .link:hover{
 color: crimson;
 }
@@ -44,7 +44,6 @@ color: crimson;
   justify-content: center;
   border: none;
   margin-left: 20px;
-  margin-top: 12px;
   font-size: 20px;
   cursor: pointer;
   color: aliceblue;

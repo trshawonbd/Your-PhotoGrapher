@@ -16,7 +16,7 @@ const CheckOut = () => {
     return (
         <div>
             <h2 className='my-5'>Thanks for Choosing my Service</h2>
-            <h3 className='my-3'>Your Choosing Plan</h3>
+            <h3 className='my-3'>Hope to see you soon</h3>
             <hr />
             {/*  <div className="card mb-3 container" >
             <div className="row g-4">

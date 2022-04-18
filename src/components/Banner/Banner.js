@@ -8,8 +8,8 @@ import Banner3 from '../../images/banner3.jpg';
 
 const Banner = () => {
     return (
-        <div>
-             <div>
+  
+             <div className='carousel'>
                     <Carousel>
             <Carousel.Item className='banner'>
                 <img
@@ -47,10 +47,10 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-
         </div>
 
-        </div>
+       
+
     );
 };
 

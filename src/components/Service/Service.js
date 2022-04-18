@@ -7,7 +7,7 @@ const Service = ({ service, addToCart }) => {
     const [showMore, setShowMore] = useState(false);
     const {name, price, picture, about} = service;
     return (
-        <div className="col service-card">
+        <div className="col service-card d-flex justify-content-center">
             <div className="card h-100 card-img" style={{ width: "18rem" }}>
                 <img src={picture} className="card-img-top" alt="..." />
                 <div className="card-body">
